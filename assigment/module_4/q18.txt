@@ -1,0 +1,3 @@
+Q.    What happens when „1‟== 1 is executed?
+Ans.  It simply evaluates to False. Because the string, "1", is not 
+      equal to the integer, 1.

@@ -1,0 +1,11 @@
+Q.     What are oops concepts? 
+
+Ans.   OOPS Concepts :
+                 
+        Class, Object, Method, Inheritance, Polymorphism,
+        Data Abstraction, and Encapsulation.
+
+        
+Q.     Is multiple inheritance supported in java ?
+
+Ans.   No.

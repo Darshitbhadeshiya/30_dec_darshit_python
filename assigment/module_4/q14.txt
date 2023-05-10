@@ -1,0 +1,17 @@
+Q.   How many except statements can a try-except block have? Name Some
+     built-in exception classes:
+
+Ans. There has to be at least one except statement
+
+     Built-in Exception classes :
+
+      ArithmeticError 
+      EOFError
+      ImportError
+      OSError 
+      SyntaxError 
+      SystemError 
+      ValueError 
+      IndexError  etc............
+
+     

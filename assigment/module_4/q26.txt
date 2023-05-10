@@ -1,0 +1,2 @@
+Q.      What is Instantiation in terms of OOP terminology?
+Ans.    The creation of an instance of a class. 

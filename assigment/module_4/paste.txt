@@ -1,0 +1,6 @@
+Mobile Brand = samsung
+Price =35000
+Mobile Brand = apple
+Price =150000
+Mobile Brand = vivo
+Price =21000

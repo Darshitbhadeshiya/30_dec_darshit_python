@@ -1,0 +1,10 @@
+Q.What is File function in python? What is the keyword to create 
+and write file
+
+Ans.    Python file object provides methods and attributes to access
+        and manipulate files. Using file object, we can read/write 
+        any file.
+
+        'open' keyword is used to create and write a file.
+
+

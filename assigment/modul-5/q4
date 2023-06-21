@@ -1,0 +1,4 @@
+Q4=What is Django URLs?make program to create django urls?
+Ans=Django runs through each URL pattern, in order, and stops at the first one that matches the requested URL, matching against path_info .
+Render the html file in views.py using render() method: For passing the newly created HTML content to the web page or, in other words,
+to connect the content to the webpage, the render() method is used.

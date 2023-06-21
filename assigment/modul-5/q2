@@ -1,0 +1,2 @@
+q2 How to check installed version of django?
+Ans=write python -m django –version in your terminal. 

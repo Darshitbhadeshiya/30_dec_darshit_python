@@ -1,0 +1,2 @@
+Q5=What is a QuerySet?Write program to create a new Post object in database: 
+ Ans=A QuerySet is a collection of data from a database.A Django model is the built-in feature that Django uses to create tables, their fields, and various constraints. In short, Django Models is the SQL of Database one uses with Django. SQL (Structured Query Language) is complex and involves a lot of different queries for creating, deleting, updating or any other stuff related to database. Django models simplify the tasks and organize tables into models

@@ -45,7 +45,7 @@
                   <div class="row">
                      <div class="col-md-4">
                         <ul class="conta_icon">
-                           <li><a href="#"><img src="/static/images/call.png" alt="#"/>Call us:9328496808</a> </li>
+                           <li><a href="#"><img src="/static/images/call.png" width="30" height="30" alt="#"/>Call us:9328496808</a> </li>
                         </ul>
                      </div>
                      <div class="col-md-4">
@@ -76,15 +76,15 @@
                   <div class="row d_flex">
                      <div class="col-md-4">
                         <ul class="conta_icon d_none1">
-                           <li><a href="#"><img src="/static/images/email.png" alt="#"/>darshitgajjar2@gmail.com</a> </li>
+                           <li><a href="#"><img src="/static/images/email.png" width="30" height="30" alt="#"/>darshitgajjar2@gmail.com</a> </li>
                         </ul>
                      </div>
                      <div class="col-md-4">
-                        <a class="logo" href="#"><img src="/static/images/logo.png" alt="#"/></a>
-                     </div>
+                        <a class="logo" href="#"><img src="" alt=""/></a>
+                     </div> 
                      <div class="col-md-4">
                         <ul class="right_icon d_none1">
-                           <li><a href="#"><img src="/static/images/shopping.png" alt="#"/></a> </li>
+                           <li><a href="#"><img src="/static/images/shopping.png" width="30" height="30" alt="#"/></a> </li>
                            <a href="#" class="order">Order Now</a> 
                         </ul>
                      </div>
@@ -147,96 +147,31 @@
       <!-- project section -->
       <div id="project" class="project">
          <div class="container">
-         
-          
             <div class="row">
-            <div class="product_main">
-             
-                  <div class="project_box ">
-                     <div class="dark_white_bg" ><img  src="/static/images/shoes1.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-            
-             
-                  <div class="project_box ">
-                     <div class="dark_white_bg" ><img  src="/static/images/shoes2.png" alt="#"/></div>
-                     <h3 >Short Openwork Cardigan $120.00</h3>
-                  </div>
-               
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="/static/images/shoes3.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-              
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="/static/images/shoes4.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-              
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="/static/images/shoes5.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-              
-            
-                  <div class="project_box ">
-                     <div class="dark_white_bg" ><img  src="/static/images/tisat1.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-              
-                  <div class="project_box ">
-                     <div class="dark_white_bg" ><img  src="/static/images/tisat2.png" alt="#"/></div>
-                     <h3 >Short Openwork Cardigan $120.00</h3>
-                  </div>
-               
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="/static/images/tisat3.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-               
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="/static/images/tisat4.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-               
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="/static/images/tisat5.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-               
-            
-                  <div class="project_box ">
-                     <div class="dark_white_bg" ><img  src="/static/images/mix1.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-               
-                  <div class="project_box ">
-                     <div class="dark_white_bg" ><img  src="/static/images/mix2.png" alt="#"/></div>
-                     <h3 >Short Openwork Cardigan $120.00</h3>
-                  </div>
-               
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="/static/images/mix3.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-              
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="/static/mages/mix4.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-               
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="/static/images/mix5.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-              
                <div class="col-md-12">
-                  <a class="read_more" href="#">See More</a>
+                  <div class="titlepage">
+                     <h2>Featured Products</h2>
+                  </div>
                </div>
             </div>
+            <div class="row">
+               <div class="product_main">
+                  {% for i in products %}
+                  <div class="project_box col-12">
+                     <div class="dark_white_bg"><img src="/media/{{i.image}}" width="50" height="10" alt="#" /></div>
+                     <h3>{{i.discription}} Rs.{{i.price}}</h3>
+                     <button type="button" class="btn btn-dark">ADD</button>
+                  </div>
+                  
+                  {% endfor %}
+                  <div class="col-md-12">
+                     <a class="read_more" href="#">See More</a>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
+       
       <!-- end project section -->
       <!--  footer -->
       <footer>
